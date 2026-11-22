@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Mini App</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .main {
+        background: var(--tg-theme-bg-color);
+        box-sizing: border-box;
+        color: var(--tg-theme-text-color);
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+        justify-items: center;
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+      }
+
+      .bot-image {
+        display: block;
+        height: 50px;
+        width: 50px;
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        margin: 0;
+      }
+
+      .text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0;
+      }
+
+      .button {
+        background: var(--tg-theme-button-color);
+        border: 0;
+        border-radius: 5px;
+        color: var(--tg-theme-button-text-color);
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title">Telegram Mini App</h1>
+      <img class="bot-image" src="bot.png" alt="image" />
+      <p class="text">Lorem ipsum</p>
+      <button class="button">Button</button>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </body>
+</html>

@@ -60,9 +60,15 @@
       <h1 class="title">Telegram Mini App</h1>
       <img class="bot-image" src="bot.png" alt="image" />
       <p class="text">Lorem ipsum</p>
-      <button class="button">Button</button>
+      <button class="button" id="closeButton">Close</button>
     </div>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      const closeButton = document.getElementById("closeButton");
+      closeButton.addEventListener("click", () => {
+        window.Telegram?.WebApp?.close();
+      });
+    </script>
   </body>
 </html>
